@@ -15,4 +15,18 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+    font-family: var(--fonte-primaria);
+}
+
+:root {
+    /*cores*/
+    --amarelo: #F2CB05;
+    --verde:#98CC25;
+    --salmão:#D94E67;
+    --branco: #F2F2F0;
+    --laranja: #F29F05;
+    --marrom: #BF6734;
+
+    /*fontes*/
+    --fonte-primaria:'Manrope', sans-serif;
 }
