@@ -201,6 +201,7 @@ body {
 }
 .home .section-02 {
   min-height: 100vh;
+  padding-bottom: 20rem;
   background-color: #365902;
   color: #f2f2f0;
   padding-top: 11rem;
@@ -263,4 +264,154 @@ body {
   max-width: 27rem;
   font-weight: 500;
   font-size: 1.6rem;
+}
+
+.about {
+  min-height: 100vh;
+}
+.about .section-01 {
+  min-height: 100vh;
+  background: #365902;
+  display: flex;
+  align-items: flex-end;
+  color: #f2f2f0;
+}
+.about .section-01 h2 {
+  font-size: 4.8rem;
+  max-width: 77.7rem;
+}
+.about .section-01 .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 136rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+.about .section-01 .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+.about .section-01 .timer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1rem;
+  width: 100%;
+  background-color: #d94e67;
+  animation: timer 4s linear infinite;
+}
+@keyframes timer {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.about .section-01 .circle {
+  width: 18.4rem;
+  height: 18.4rem;
+  border-radius: 100%;
+  border: 0.5rem solid #d94e67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.about .section-01 .circle.active {
+  background-color: #d94e67;
+}
+.about .section-01 .circle:hover {
+  background-color: #d94e67;
+}
+.about .section-01 .circle img {
+  max-width: 14rem;
+}
+.about .section-02 {
+  background-color: #f29f05;
+  padding-top: 13rem;
+  padding-bottom: 10rem;
+}
+.about .section-02 h2 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 13rem;
+}
+.about .section-02 .wrap {
+  max-width: 136rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.about .section-02 .flex {
+  display: flex;
+  gap: 4.5rem;
+}
+.about .section-02 .flex.item-02 {
+  margin-top: 20rem;
+}
+.about .section-02 p {
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.inseguranca-alimentar .wrap {
+  max-width: 132rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.inseguranca-alimentar .section-01 {
+  min-height: 100vh;
+  padding-bottom: 7rem;
+  background: #365902;
+  color: white;
+}
+.inseguranca-alimentar .section-01 .wrap {
+  max-width: 132rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 19rem;
+  gap: 10rem;
+}
+.inseguranca-alimentar .section-01 h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+.inseguranca-alimentar .section-01 img {
+  width: 60rem;
+  height: 60rem;
+}
+.inseguranca-alimentar .section-02 {
+  padding-top: 14rem;
+  min-height: 100vh;
+}
+.inseguranca-alimentar .section-02 h2 {
+  color: #d94e67;
+  font-weight: 600;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 11rem;
+}
+.inseguranca-alimentar .section-02 table {
+  width: 100%;
+  text-align: left;
+}
+.inseguranca-alimentar .section-03 {
+  min-height: 100vh;
+  text-align: center;
+  background: #d94e67;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+.inseguranca-alimentar .section-03 h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 11rem;
 }/*# sourceMappingURL=main.css.map */
