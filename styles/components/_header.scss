@@ -29,11 +29,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 99999;
   background: linear-gradient(180deg, #f29f05 0%, #d94e67 100%);
 
   &.active {
-    opacity: 1;
     pointer-events: all;
   }
 
@@ -50,6 +49,13 @@
     display: inline-block;
     font-size: 6.4rem;
     font-weight: 700;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $yellow;
+    }
   }
 
   a.active {
@@ -76,5 +82,18 @@
     width: 100%;
     max-width: 136rem;
     bottom: 10rem;
+  }
+}
+
+@media (max-width: 1360px) {
+  .header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .full-screen-menu {
+    .navigation {
+      padding-left: 4rem;
+    }
   }
 }

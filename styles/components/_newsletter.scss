@@ -27,17 +27,25 @@
     border-radius: 4rem;
     padding-right: 3rem;
     input {
+      width: 100%;
       background: none;
       border: none;
       outline: none;
-      padding-left: 2.4rem;
+      margin-left: 2.4rem;
       color: $white;
+      margin-right: 1rem;
       font-weight: 300;
       font-size: 2rem;
       &::placeholder {
         color: $white;
         font-weight: 300;
       }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important;
     }
     button {
       background: $white;
@@ -56,6 +64,34 @@
       &.disabled {
         cursor: not-allowed;
         filter: brightness(0.6);
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .newsletter {
+    .wrap {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .newsletter {
+    .wrap {
+      h2 {
+        text-align: center;
+      }
+      .input-wrap {
+        margin: 0 auto;
+      }
+      img {
+        display: none;
       }
     }
   }
