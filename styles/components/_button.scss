@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(
+    93.09deg,
+    rgba(217, 78, 103, 0.7) 0%,
+    rgba(217, 78, 103, 0.97) 0.01%,
+    rgba(242, 159, 5, 0.5) 100%
+  );
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1.8rem 8rem;
+  border-radius: 0.8rem;
+  color: white;
+  backdrop-filter: blur(4px);
+
+  transition: filter ease 0.1s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

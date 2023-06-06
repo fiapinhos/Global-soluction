@@ -1,0 +1,62 @@
+.newsletter {
+  padding-top: 6.8rem;
+  padding-bottom: 12.8rem;
+
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 136rem;
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+
+  .input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 53.8rem;
+    background: $pink;
+    height: 5.8rem;
+    border-radius: 4rem;
+    padding-right: 3rem;
+    input {
+      background: none;
+      border: none;
+      outline: none;
+      padding-left: 2.4rem;
+      color: $white;
+      font-weight: 300;
+      font-size: 2rem;
+      &::placeholder {
+        color: $white;
+        font-weight: 300;
+      }
+    }
+    button {
+      background: $white;
+      color: black;
+      border-radius: 4rem;
+      width: 10rem;
+      height: 3.8rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+
+      transition: filter ease 0.2s;
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+        filter: brightness(0.6);
+      }
+    }
+  }
+}
