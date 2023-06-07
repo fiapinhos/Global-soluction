@@ -125,6 +125,11 @@ body {
   bottom: 10rem;
 }
 
+@media (max-width: 1460px) {
+  .header {
+    padding: 0 4rem;
+  }
+}
 @media (max-width: 1360px) {
   .header {
     padding-left: 4rem;
@@ -311,6 +316,11 @@ body {
   font-size: 1.6rem;
 }
 
+@media (max-width: 1460px) {
+  .home .section-01 {
+    padding: 0 4rem;
+  }
+}
 @media (max-width: 1400px) {
   .home .section-03 .cards {
     grid-template-columns: 1fr 1fr;

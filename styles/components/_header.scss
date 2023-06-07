@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 1460px) {
+  .header {
+    padding: 0 4rem;
+  }
+}
+
 @media (max-width: 1360px) {
   .header {
     padding-left: 4rem;
