@@ -229,6 +229,16 @@ body {
     display: none;
   }
 }
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.8rem;
+  background: #d94e67;
+  width: 0%;
+  z-index: 9999;
+}
+
 .home .wrap {
   margin: 0 auto;
   width: 100%;
@@ -482,17 +492,85 @@ body {
 .inseguranca-alimentar .section-02 {
   padding-top: 14rem;
   min-height: 100vh;
+  background: #f2cb05;
+  color: black;
 }
 .inseguranca-alimentar .section-02 h2 {
-  color: #d94e67;
   font-weight: 600;
   font-size: 4.8rem;
   text-align: center;
-  margin-bottom: 11rem;
+  margin-bottom: 6.5rem;
 }
-.inseguranca-alimentar .section-02 table {
+.inseguranca-alimentar .section-02 select {
+  width: 42rem;
+  height: 5.2rem;
+  background: #000;
+  color: #fff;
+  padding-left: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  display: block;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+}
+.inseguranca-alimentar .section-02 .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  margin: 0 auto;
+}
+.inseguranca-alimentar .section-02 .flex .block {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.inseguranca-alimentar .section-02 .flex .legend {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.inseguranca-alimentar .section-02 .flex .pink {
+  background-color: #d94e67;
+}
+.inseguranca-alimentar .section-02 .flex .green {
+  background-color: #365902;
+}
+.inseguranca-alimentar .section-02 .percent-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+.inseguranca-alimentar .section-02 .percent {
+  max-width: 80rem;
+  height: 4.7rem;
+  border-radius: 2rem;
+  position: relative;
   width: 100%;
-  text-align: left;
+  background: white;
+  margin: 0 auto;
+}
+.inseguranca-alimentar .section-02 .percent .inside {
+  height: 4.7rem;
+  background: blue;
+  border-radius: 2rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  font-weight: 600;
+}
+.inseguranca-alimentar .section-02 .percent .percent-text {
+  transform: translateX(120%);
+  color: #000;
+}
+.inseguranca-alimentar .section-02 .percent .inside-1 {
+  background-color: #d94e67;
+}
+.inseguranca-alimentar .section-02 .percent .inside-2 {
+  background-color: #365902;
 }
 .inseguranca-alimentar .section-03 {
   min-height: 100vh;
@@ -507,4 +585,96 @@ body {
   font-size: 4.8rem;
   text-align: center;
   margin-bottom: 11rem;
+}
+
+.ods2 .section-01 {
+  max-width: 136rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  min-height: 100vh;
+  padding-top: 12rem;
+}
+.ods2 .section-01 .bg-onu {
+  background-image: url("../../assets/img/onu.png");
+  min-height: 66rem;
+  background-position: center;
+  background-size: cover;
+}
+.ods2 .section-01 .onu-content {
+  background-color: #d94e67;
+  color: white;
+  padding: 6rem 4rem;
+  padding-right: 7.8rem;
+}
+.ods2 .section-01 .onu-content h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+.ods2 .section-01 .onu-content p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 167.6%;
+}
+.ods2 .flex {
+  display: flex;
+  max-width: 136rem;
+  margin: 0 auto;
+  margin-top: 24rem;
+  gap: 4.4rem;
+}
+.ods2 .flex.last {
+  margin-bottom: 20rem;
+}
+.ods2 .flex img {
+  max-width: 66.6rem;
+}
+.ods2 .flex h2 {
+  color: #d94e67;
+  margin-bottom: 1.6rem;
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+.ods2 .flex p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .ods2 .section-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .ods2 .section-01 .bg-onu {
+    min-height: 44rem;
+  }
+}
+@media (max-width: 1480px) {
+  .ods2 .flex {
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  .ods2 .flex img {
+    max-width: 60rem;
+  }
+  .ods2 .flex div {
+    max-width: 60rem;
+  }
+}
+@media (max-width: 1100px) {
+  .ods2 .flex img {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 900px) {
+  .ods2 .flex {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .ods2 .flex img {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

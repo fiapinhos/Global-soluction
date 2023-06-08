@@ -14,11 +14,18 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
+    <!-- SCROLL BAR -->
+    <div class="progress-bar"></div>
     <!-- HEADER -->
     <header class="header">
-      <a class="logo" href="/">Alvoallmentar</a>
+      <a class="logo" href="/">Alvoalimentar</a>
       <button id="open-menu" class="menu-btn">
         <i class="ph ph-list"></i>
       </button>
@@ -59,8 +66,8 @@
         <div class="wrap">
           <div data-aos-duration="1000" data-aos="fade-right" class="left">
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
-              nulla, tempore. Deserunt excepturi quas vero.
+              Ajudamos a melhorar a eficiência operacional do setor
+              supermercadista brasileiro
             </h2>
             <button class="button">Quero saber mais</button>
           </div>
@@ -78,7 +85,9 @@
           <p>Veja o vídeo</p>
           <iframe
             data-aos="fade-down"
-            src="https://www.youtube.com/embed/sWN_Q37pfpU"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_8QmsDb8LQc?showinfo=0&rel=0&modestbranding=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -160,5 +169,6 @@
     </script>
     <script src="./scripts/header.js"></script>
     <script src="./scripts/newsletter.js"></script>
+    <script src="./scripts/progress-bar.js"></script>
   </body>
 </html>

@@ -34,18 +34,94 @@
   .section-02 {
     padding-top: 14rem;
     min-height: 100vh;
-
+    background: $yellow;
+    color: black;
     h2 {
-      color: $pink;
       font-weight: 600;
       font-size: 4.8rem;
       text-align: center;
-      margin-bottom: 11rem;
+      margin-bottom: 6.5rem;
     }
 
-    table {
+    select {
+      width: 42rem;
+      height: 5.2rem;
+      background: #000;
+      color: #fff;
+      padding-left: 2rem;
+      font-weight: 600;
+      font-size: 2rem;
+      display: block;
+      outline: none;
+      margin: 0 auto;
+      margin-bottom: 3.2rem;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.6rem;
+      margin: 0 auto;
+
+      .block {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .legend {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+      }
+
+      .pink {
+        background-color: $pink;
+      }
+      .green {
+        background-color: $green;
+      }
+    }
+
+    .percent-wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem;
+      gap: 2rem;
+    }
+
+    .percent {
+      max-width: 80rem;
+      height: 4.7rem;
+      border-radius: 2rem;
+      position: relative;
       width: 100%;
-      text-align: left;
+      background: white;
+      margin: 0 auto;
+
+      .inside {
+        height: 4.7rem;
+        background: blue;
+        border-radius: 2rem;
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .percent-text {
+        transform: translateX(120%);
+        color: #000;
+      }
+
+      .inside-1 {
+        background-color: $pink;
+      }
+      .inside-2 {
+        background-color: $green;
+      }
     }
   }
 

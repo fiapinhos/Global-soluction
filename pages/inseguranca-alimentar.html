@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alvoallmentar | Insegurança alimentar</title>
+    <title>Alvoalimentar | Insegurança alimentar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +13,18 @@
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
+    <!-- SCROLL BAR -->
+    <div class="progress-bar"></div>
     <!-- HEADER -->
     <header class="header">
-      <a class="logo" href="/">Alvoallmentar</a>
+      <a class="logo" href="/">Alvoalimentar</a>
       <button id="open-menu" class="menu-btn">
         <i class="ph ph-list"></i>
       </button>
@@ -63,32 +70,53 @@
         </div>
       </section>
       <section class="section-02">
-        <h2>Alguns de nossos alimentos nutricionais</h2>
         <div class="wrap">
-          <table>
-            <thead>
-              <th>Item 01</th>
-              <th>Item 02</th>
-              <th>Item 03</th>
-              <th>Item 04</th>
-              <th>Item 05</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-              </tr>
-            </tbody>
-          </table>
+          <h2>
+            Porcentagem da população em insegurança alimentar por continente
+          </h2>
+          <div>
+            <select name="continente" id="select">
+              <option value="africa">África</option>
+              <option value="america-latina-e-caribe">
+                América Latina e Caribe
+              </option>
+              <option value="asia">Ásia</option>
+              <option value="oceania">Oceania</option>
+              <option value="america-do-norte-e-europa">
+                América do Norte e Europa
+              </option>
+            </select>
+
+            <div class="flex">
+              <div class="legend">
+                <div class="block pink"></div>
+                <p>Insegurança alimentar grave ou moderada</p>
+              </div>
+              <div class="legend">
+                <div class="block green"></div>
+                <p>Insegurança alimentar grave ou moderada</p>
+              </div>
+            </div>
+
+            <div class="percent-wrap">
+              <div class="moderate percent">
+                <div class="inside inside-1">
+                  <p class="percent-text" id="value-1"></p>
+                </div>
+              </div>
+              <div class="cova percent">
+                <div class="inside inside-2">
+                  <p class="percent-text" id="value-2"></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section-03">
+      <!--  <section class="section-03">
         <h2>Porcentagem da População em Insegurança Alimentar</h2>
         <img src="../assets/img/grafico-inseguranca-alimentar.png" alt="" />
-      </section>
+      </section> -->
       <section class="newsletter">
         <div class="wrap">
           <div class="left">
@@ -116,6 +144,7 @@
     </script>
     <script src="../scripts/header.js"></script>
     <script src="../scripts/newsletter.js"></script>
-    <script src="../scripts/about-hero.js"></script>
+    <script src="../scripts/progress-bar.js"></script>
+    <script src="../scripts/inseguranca-alimentar.js"></script>
   </body>
 </html>

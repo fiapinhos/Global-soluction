@@ -1,3 +1,5 @@
+/* FUNÇÕES PARA VALIDAR SE O E-MAIL DIGITADO É VÁLIDO E DAR UM ALERT CONFIRMANDO O ENVIO */
+
 const sendButton = document.querySelector(".send-button");
 const emailInput = document.querySelector("#email");
 

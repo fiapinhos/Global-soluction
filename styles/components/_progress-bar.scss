@@ -1,0 +1,9 @@
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.8rem;
+  background: $pink;
+  width: 0%;
+  z-index: 9999;
+}

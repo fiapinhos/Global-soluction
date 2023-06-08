@@ -1,3 +1,5 @@
+/* FUNÇÕES PARA ABRIR E FECHAR O MENU E SUAS ANIMAÇÕES */
+
 const openBtn = document.querySelector("#open-menu");
 const closeBtn = document.querySelector("#close-menu");
 const fullScreenMenu = document.querySelector(".full-screen-menu");
