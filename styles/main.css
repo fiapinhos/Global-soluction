@@ -333,6 +333,8 @@ body {
 }
 @media (max-width: 1400px) {
   .home .section-03 .cards {
+    padding-right: 2rem;
+    padding-left: 2rem;
     grid-template-columns: 1fr 1fr;
   }
   .home .section-03 .cards .card {
@@ -461,6 +463,14 @@ body {
   font-size: 3.2rem;
 }
 
+@media (max-width: 1440px) {
+  .about .section-01 .wrap {
+    padding-left: 4rem;
+  }
+  .about .section-01 .icons {
+    display: none;
+  }
+}
 .inseguranca-alimentar .wrap {
   max-width: 132rem;
   width: 100%;
@@ -469,7 +479,7 @@ body {
 .inseguranca-alimentar .section-01 {
   min-height: 100vh;
   padding-bottom: 7rem;
-  background: #365902;
+  background: #d94e67;
   color: white;
 }
 .inseguranca-alimentar .section-01 .wrap {
@@ -488,6 +498,25 @@ body {
 .inseguranca-alimentar .section-01 img {
   width: 60rem;
   height: 60rem;
+}
+.inseguranca-alimentar .o-que-e {
+  padding: 20rem 2rem;
+  display: flex;
+  max-width: 134rem;
+  margin: 0 auto;
+  gap: 4rem;
+}
+.inseguranca-alimentar .o-que-e img {
+  border-radius: 2.4rem;
+}
+.inseguranca-alimentar .o-que-e h2 {
+  color: #d94e67;
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+.inseguranca-alimentar .o-que-e p {
+  margin-top: 1.6rem;
+  font-size: 2rem;
 }
 .inseguranca-alimentar .section-02 {
   padding-top: 14rem;
@@ -585,6 +614,53 @@ body {
   font-size: 4.8rem;
   text-align: center;
   margin-bottom: 11rem;
+}
+
+.fome-no-mundo .section-01 {
+  min-height: 100vh;
+  padding-bottom: 7rem;
+  background: #d94e67;
+  color: white;
+}
+.fome-no-mundo .section-01 .wrap {
+  max-width: 132rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 19rem;
+  gap: 10rem;
+}
+.fome-no-mundo .section-01 h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+.fome-no-mundo .section-02 {
+  background-color: #365902;
+  color: white;
+}
+.fome-no-mundo .section-03 {
+  background-color: #f29f05;
+}
+.fome-no-mundo .section-02 h2,
+.fome-no-mundo .section-03 h2 {
+  color: #d94e67;
+}
+.fome-no-mundo .wrap {
+  display: flex;
+  max-width: 132rem;
+  margin: 0 auto;
+  padding: 18rem 0;
+  gap: 4rem;
+}
+.fome-no-mundo .wrap h2 {
+  font-weight: 600;
+  font-size: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+.fome-no-mundo .wrap p {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .ods2 .section-01 {
