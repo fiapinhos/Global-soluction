@@ -673,7 +673,7 @@ body {
   padding-top: 12rem;
 }
 .ods2 .section-01 .bg-onu {
-  background-image: url("../../assets/img/onu.png");
+  background-image: url("../assets/img/onu.png");
   min-height: 66rem;
   background-position: center;
   background-size: cover;
