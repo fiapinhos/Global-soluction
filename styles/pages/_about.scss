@@ -1,0 +1,119 @@
+.about {
+  min-height: 100vh;
+
+  .section-01 {
+    min-height: 100vh;
+    background: $green;
+    display: flex;
+    align-items: flex-end;
+    color: $white;
+
+    h2 {
+      font-size: 4.8rem;
+      max-width: 77.7rem;
+    }
+
+    .wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      max-width: 136rem;
+      margin: 0 auto;
+      padding-bottom: 10rem;
+    }
+
+    .icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.2rem;
+    }
+
+    .timer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1rem;
+      width: 100%;
+      background-color: $pink;
+      animation: timer 4s linear infinite;
+    }
+
+    @keyframes timer {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .circle {
+      width: 18.4rem;
+      height: 18.4rem;
+      border-radius: 100%;
+      border: 0.5rem solid $pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.active {
+        background-color: $pink;
+      }
+
+      &:hover {
+        background-color: $pink;
+      }
+
+      img {
+        max-width: 14rem;
+      }
+    }
+  }
+
+  .section-02 {
+    background-color: $orange;
+    padding-top: 13rem;
+    padding-bottom: 10rem;
+    h2 {
+      font-weight: 600;
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 13rem;
+    }
+
+    .wrap {
+      max-width: 136rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+      gap: 4.5rem;
+
+      &.item-02 {
+        margin-top: 20rem;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 3.2rem;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .about {
+    .section-01 {
+      .wrap {
+        padding-left: 4rem;
+      }
+      .icons {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvoalimentar | Insegurança alimentar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- SCROLL BAR -->
+    <div class="progress-bar"></div>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="logo" href="/">Alvoalimentar</a>
+      <button id="open-menu" class="menu-btn">
+        <i class="ph ph-list"></i>
+      </button>
+    </header>
+    <div class="full-screen-menu">
+      <div class="header">
+        <button id="close-menu" class="menu-btn full-screen">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="quem-somos.html">Quem somos?</a>
+          </li>
+          <li>
+            <a href="fome-no-mundo.html">Fome no mundo</a>
+          </li>
+          <li>
+            <a href="inseguranca-alimentar.html">Insegurança alimentar</a>
+          </li>
+          <li>
+            <a class="active" href="agricultura-e-ods2.html"
+              >Agricultura e ODS 2</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <main class="ods2">
+      <section class="section-01">
+        <div class="bg-onu"></div>
+        <div class="onu-content">
+          <h2>Conheça sobre a ODS2</h2>
+          <p>
+            A sigla ODS, de Objetivos de Desenvolvimento Sustentável, fazem
+            parte da chamada “Agenda 2030”. Trata-se de um pacto global assinado
+            durante a Cúpula das Nações Unidas, em 2015, por 193 países membros.
+            A agenda é composta por 17 objetivos ambiciosos e interconectados,
+            desdobrados em 169 metas, com foco em superar os principais desafios
+            de desenvolvimento enfrentados por pessoas no Brasil e no mundo,
+            promovendo o crescimento sustentável global até 2030.
+          </p>
+        </div>
+      </section>
+      <section class="flex">
+        <img src="./assets/img/como-fazemos-02.png" alt="" />
+        <div>
+          <h2>Fome Zero</h2>
+          <p>
+            O ODS 2 visa garantir o acesso universal a alimentos seguros,
+            nutritivos e suficientes. Busca-se eliminar todas as formas de
+            desnutrição e acabar com a fome em todas as suas manifestações. Isso
+            envolve não apenas fornecer alimentos adequados, mas também garantir
+            que as pessoas tenham meios de obter alimentos de forma sustentável
+            e acessível.
+          </p>
+        </div>
+      </section>
+      <section class="flex">
+        <div>
+          <h2>Segurança Alimentar</h2>
+          <p>
+            O ODS 2 busca alcançar a segurança alimentar, garantindo que todas
+            as pessoas tenham acesso regular e permanente a alimentos
+            suficientes, nutritivos e culturalmente adequados. Isso requer a
+            promoção de sistemas agrícolas sustentáveis, a diversificação da
+            produção alimentar e o fortalecimento da resiliência dos
+            agricultores.
+          </p>
+        </div>
+        <img src="./assets/img/seguranca-alimentar.png" alt="" />
+      </section>
+      <section class="flex">
+        <img src="./assets/img/nutricao-adequada.png" alt="" />
+        <div>
+          <h2>Nutrição Adequada</h2>
+          <p>
+            O ODS 2 visa melhorar a nutrição das pessoas, especialmente das
+            crianças, garantindo acesso a alimentos nutritivos e promovendo
+            práticas alimentares saudáveis. Isso envolve não apenas a quantidade
+            de alimentos consumidos, mas também sua qualidade, garantindo uma
+            dieta equilibrada, rica em nutrientes essenciais.
+          </p>
+        </div>
+      </section>
+      <section class="flex last">
+        <div>
+          <h2>Agricultura Sustentável</h2>
+          <p>
+            O ODS 2 promove a adoção de práticas agrícolas sustentáveis para
+            aumentar a produtividade, a eficiência e a resiliência dos sistemas
+            de produção alimentar. Isso inclui o uso responsável de recursos
+            naturais, a conservação da biodiversidade, o apoio aos agricultores
+            familiares e o investimento em tecnologias agrícolas inovadoras.
+          </p>
+        </div>
+        <img src="./assets/img/agricultura-sustentavel.png" alt="" />
+      </section>
+
+      <section class="newsletter">
+        <div class="wrap">
+          <div class="left">
+            <h2>Se inscreva para receber novidades sobre o projeto</h2>
+            <div class="input-wrap">
+              <input
+                id="email"
+                placeholder="example@email.com"
+                type="email"
+                autocomplete="off"
+              />
+              <button disabled class="send-button disabled">Enviar</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./assets/img/newsletter.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/progress-bar.js"></script>
+    <script src="./scripts/newsletter.js"></script>
+  </body>
+</html>

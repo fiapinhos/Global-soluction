@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvoalimentar | Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- SCROLL BAR -->
+    <div class="progress-bar"></div>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="logo" href="/">Alvoalimentar</a>
+      <button id="open-menu" class="menu-btn">
+        <i class="ph ph-list"></i>
+      </button>
+    </header>
+    <div class="full-screen-menu">
+      <div class="header">
+        <button id="close-menu" class="menu-btn full-screen">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="quem-somos.html">Quem somos?</a>
+          </li>
+          <li>
+            <a href="fome-no-mundo.html">Fome no mundo</a>
+          </li>
+          <li>
+            <a href="inseguranca-alimentar.html">Insegurança alimentar</a>
+          </li>
+          <li>
+            <a href="agricultura-e-ods2.html">Agricultura e ODS 2</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <main class="about">
+      <section class="section-01">
+        <div class="wrap">
+          <h2 class="current-text">
+            Somos uma Empresa que da as melhores soluções aos alimentos que não
+            serão vendidos, seja pela estética ou próximo ao prazo de validade.
+          </h2>
+          <div class="icons">
+            <div id="btn-1" class="circle active">
+              <img src="./assets/img/bag.svg" alt="Sacola de compras" />
+            </div>
+            <div id="btn-2" class="circle">
+              <img src="./assets/img/clock.svg" alt="Relógio" />
+            </div>
+            <div id="btn-3" class="circle">
+              <img src="./assets/img/supermarket.svg" alt="Supermercado" />
+            </div>
+            <div id="btn-4" class="circle">
+              <img src="./assets/img/hands.svg" alt="Mãos se apertando" />
+            </div>
+          </div>
+        </div>
+        <div class="timer"></div>
+      </section>
+      <section class="section-02">
+        <h2>Como fazemos?</h2>
+        <div class="wrap">
+          <div class="flex">
+            <img src="./assets/img/como-fazemos-01.png" alt="" />
+            <p>
+              Oferecemos de forma centralizada ao supermercadista , quais são as
+              lojas que tem mais incidência de produtos que estão sendo doados,
+              para que ele possa ajustar seu processo de compra e distribuição ,
+              garantindo menos disperdício e dando um sentido Social aos
+              alimentos não tão bons.
+            </p>
+          </div>
+          <div class="flex item-02">
+            <p>
+              As ONG´S terão uma visão mais ampla aonde buscar os produtos,
+              aumentando a quantidade de alimentos que ela vai ter para
+              distribuir, evitando o desperdício.
+            </p>
+            <img src="./assets/img/como-fazemos-02.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="wrap">
+          <div class="left">
+            <h2>Se inscreva para receber novidades sobre o projeto</h2>
+            <div class="input-wrap">
+              <input
+                id="email"
+                placeholder="example@email.com"
+                type="email"
+                autocomplete="off"
+              />
+              <button disabled class="send-button disabled">Enviar</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./assets/img/newsletter.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/newsletter.js"></script>
+    <script src="./scripts/about-hero.js"></script>
+    <script src="./scripts/progress-bar.js"></script>
+  </body>
+</html>

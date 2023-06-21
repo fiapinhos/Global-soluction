@@ -1,0 +1,165 @@
+.inseguranca-alimentar {
+  .wrap {
+    max-width: 132rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-01 {
+    min-height: 100vh;
+    padding-bottom: 7rem;
+
+    background: $pink;
+    color: white;
+
+    .wrap {
+      max-width: 132rem;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding-top: 19rem;
+      gap: 10rem;
+    }
+    h2 {
+      font-size: 4.8rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 60rem;
+      height: 60rem;
+    }
+  }
+
+  .o-que-e {
+    padding: 20rem 2rem;
+    display: flex;
+    max-width: 134rem;
+    margin: 0 auto;
+    gap: 4rem;
+    img {
+      border-radius: 2.4rem;
+    }
+
+    h2 {
+      color: $pink;
+      font-size: 4.6rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 1.6rem;
+      font-size: 2rem;
+    }
+  }
+
+  .section-02 {
+    padding-top: 14rem;
+    min-height: 100vh;
+    background: $yellow;
+    color: black;
+    h2 {
+      font-weight: 600;
+      font-size: 4.8rem;
+      text-align: center;
+      margin-bottom: 6.5rem;
+    }
+
+    select {
+      width: 42rem;
+      height: 5.2rem;
+      background: #000;
+      color: #fff;
+      padding-left: 2rem;
+      font-weight: 600;
+      font-size: 2rem;
+      display: block;
+      outline: none;
+      margin: 0 auto;
+      margin-bottom: 3.2rem;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.6rem;
+      margin: 0 auto;
+
+      .block {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .legend {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+      }
+
+      .pink {
+        background-color: $pink;
+      }
+      .green {
+        background-color: $green;
+      }
+    }
+
+    .percent-wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem;
+      gap: 2rem;
+    }
+
+    .percent {
+      max-width: 80rem;
+      height: 4.7rem;
+      border-radius: 2rem;
+      position: relative;
+      width: 100%;
+      background: white;
+      margin: 0 auto;
+
+      .inside {
+        height: 4.7rem;
+        background: blue;
+        border-radius: 2rem;
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .percent-text {
+        transform: translateX(120%);
+        color: #000;
+      }
+
+      .inside-1 {
+        background-color: $pink;
+      }
+      .inside-2 {
+        background-color: $green;
+      }
+    }
+  }
+
+  .section-03 {
+    min-height: 100vh;
+    text-align: center;
+    background: $pink;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+
+    h2 {
+      color: white;
+      font-weight: 600;
+      font-size: 4.8rem;
+      text-align: center;
+      margin-bottom: 11rem;
+    }
+  }
+}
